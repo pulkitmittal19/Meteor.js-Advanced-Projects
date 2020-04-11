@@ -1,19 +1,24 @@
 import { Template } from 'meteor/templating';
+import {Accounts} from 'meteor/accounts-base';
 import './main.html';
 import { Notes } from '../lib/collections.js';
 
+Accounts.ui.config({
+  passwordSignupFields: 'USERNAME_ONLY'
+});
+
 Template.body .helpers({
-  /*notes: [
+  notes: [
     {text: "My Note 1"},
     {text: "My Note 2"},
     {text: "My Note 3"}
   
   
   ]
- */
+ /*
   notes(){
     return Notes.find({});
-  }
+  }*/
 });
 
 
