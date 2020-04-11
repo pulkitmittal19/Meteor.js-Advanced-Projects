@@ -8,17 +8,17 @@ Accounts.ui.config({
 });
 
 Template.body .helpers({
-  notes: [
+ /* notes: [
     {text: "My Note 1"},
     {text: "My Note 2"},
     {text: "My Note 3"}
   
   
   ]
- /*
+ */
   notes(){
-    return Notes.find({});
-  }*/
+    return Notes.find({}, {sort: {createdAt:-1}});
+  }
 });
 
 
@@ -30,12 +30,14 @@ Template.add.events({
     const target = event.target;
     const text= target.text.value;
 
-
+/*
     Notes.insert({
       text:text,
-      createdAt: new Date()
+      createdAt: new Date(),
+      owner: MediaStreamError.userId(),
+      username: MediaStreamError.user().username,
     });
-
+*/Meteor.call('notes.insert', text)
 
     target.text.value=" ";
 
@@ -46,8 +48,8 @@ Template.add.events({
 
 Template.note.events({
   "click .delete-note" : function(){
-    Notes.remove(this._id);
-
+    //Notes.remove(this._id);
+    Meteor.call('notes.remove', this)
     return false;
 
   }
