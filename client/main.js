@@ -7,7 +7,7 @@ Accounts.ui.config({
   passwordSignupFields: 'USERNAME_ONLY'
 });
 
-Template.body .helpers({
+Template.body.helpers({
  /* notes: [
     {text: "My Note 1"},
     {text: "My Note 2"},
