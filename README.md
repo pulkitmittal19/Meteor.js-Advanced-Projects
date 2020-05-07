@@ -1,6 +1,8 @@
-<<<<<<< HEAD
-# Meteot.js Advanced Projects
+
+# Meteor.js Advanced Projects
 
 Full stack web-applications using Meteor.js
+
+1) Notes-Managaer
 
 
