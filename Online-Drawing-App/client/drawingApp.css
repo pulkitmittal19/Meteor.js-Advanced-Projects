@@ -48,12 +48,12 @@
 }
 
 .clear{
-	border-width:1.5px;
+	border-width:2.5px;
 	border-color: black;
-	background-color: lightgray;
-	
+	width: 50px;
 
 }
+
 .thicker{
 	border-width:1.5px;
 	border-color: black;
