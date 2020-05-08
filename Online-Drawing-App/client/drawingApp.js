@@ -28,6 +28,73 @@ Template.wall.events({
     });
   },
 
+
+	//choose a color. Initialise the last vals, otherwise a stray line will appear.
+
+	  "click button.red": function () {
+	    lastX=0;
+	    lastY=0;
+	    strokeColor = "red";
+	  },
+
+	 "click button.grey": function () {
+	    lastX=0;
+	    lastY=0;
+	    strokeColor = "grey";
+	  },
+
+	 "click button.magenta": function () {
+	    lastX=0;
+	    lastY=0;
+	    strokeColor = "magenta";
+	  },
+
+	  "click button.black": function () {
+	    lastX=0;
+	    lastY=0;
+	    strokeColor = "black";
+	  },
+
+	 "click button.orange": function () {
+	    lastX=0;
+	    lastY=0;
+	    strokeColor = "orange";
+	  },
+
+	  "click button.pink": function () {
+	    lastX=0;
+	    lastY=0;
+	    strokeColor = "pink";
+	  },
+
+	  "click button.blue": function () {
+	    lastX=0;
+	    lastY=0;
+	    strokeColor = "blue";
+	  },
+
+	  "click button.green": function () {
+	    lastX=0;
+	    lastY=0;
+	    strokeColor = "green";
+	  },
+
+	  "click button.thicker": function () {
+
+	    thickness+=1;
+
+	  },
+
+	  "click button.thinner": function () {
+	    
+	    if (thickness > 0) {
+	      thickness-=1;
+		
+	    }
+	  },
+
+
+
   
 })
 
