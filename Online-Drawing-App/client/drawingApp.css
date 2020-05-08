@@ -1,1 +1,71 @@
+.red{
+	background-color: red;
+	width: 50px;
 
+}
+
+.grey{
+	background-color: grey;
+	width: 50px;
+
+}
+
+.magenta{
+	background-color: magenta;
+	width: 70px;
+
+}
+
+.blue{
+	background-color: blue;
+	width: 50px;
+
+}
+
+.green{
+	background-color: green;
+	width: 50px;
+
+}
+
+.black{
+	background-color: black;
+	color: white;
+	width: 50px;
+
+}
+
+.orange{
+	background-color: orange;
+	width: 60px;
+
+}
+
+.pink{
+	background-color: pink;
+	width: 50px;
+
+}
+
+.clear{
+	border-width:1.5px;
+	border-color: black;
+	background-color: lightgray;
+	
+
+}
+.thicker{
+	border-width:1.5px;
+	border-color: black;
+	background-color: lightgray;
+	width: 60px;
+	
+}
+
+.thinner{
+	border-width:1.5px;
+	border-color: black;
+	background-color: lightgray;
+	width: 60px;
+	
+}
