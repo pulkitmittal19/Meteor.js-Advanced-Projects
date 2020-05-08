@@ -1,0 +1,19 @@
+<head>
+  <title>Online Drawing</title>
+</head>
+
+<body>
+<h2>Online Drawing Website</h2>
+<h4>Click and drag the mouse to draw something</h4>
+  {{> wall}}
+</body>
+
+<template name="wall">
+
+ {{> canvas}}
+
+</template>
+
+<template name="canvas">
+  <div id='canvas'></div>
+</template>
